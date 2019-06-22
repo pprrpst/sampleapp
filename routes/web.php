@@ -41,3 +41,6 @@ Route::get('/mock_3', 'HomeController@mock_3')->name('mock_3');
 Route::get('/mock_4', 'HomeController@mock_4')->name('mock_4');
 Route::get('/mock_5', 'HomeController@mock_5')->name('mock_5');
 Route::get('/mock_6', 'HomeController@mock_6')->name('mock_6');
+
+//Route::get('/search', 'HomeController@search'); // test
+Route::post('/search', 'HomeController@search');
