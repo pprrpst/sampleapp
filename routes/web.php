@@ -28,6 +28,13 @@ Route::post('auth/login', 'Auth\LoginController@login');
 Route::get('auth/logout', 'Auth\LoginController@logout');
 
 
+// jts 関連？
+Route::get('/login2', 'LoginController@getLogin');
+Route::post('/login2', 'LoginController@postLogin');
+Route::get('/logout2', 'LoginController@postLogout');
+
+
+
 
 // 以下 momotani のを動作させるための設定 (blade にroute('logout')とかあるから）
 Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login'); // authenticate() 後のリダイレクト
