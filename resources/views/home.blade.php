@@ -20,7 +20,7 @@
 {{ Auth::user() }}
 @php
     $user = Auth::user();
-    var_dump($user->name);
+//    var_dump($user);
 @endphp
 <br />
 {{ var_dump(request()->session()->getId() ) }}
