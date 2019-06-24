@@ -32,6 +32,12 @@ Route::get('auth/logout', 'Auth\LoginController@logout');
 Route::get('/login2', 'LoginController@getLogin');
 Route::post('/login2', 'LoginController@postLogin');
 Route::get('/logout2', 'LoginController@postLogout');
+// user
+Route::get('/user/register', 'UserController@getRegister')->middleware('auth');
+Route::post('/user/register', 'UserController@postRegister')->middleware('auth');
+
+
+
 
 
 

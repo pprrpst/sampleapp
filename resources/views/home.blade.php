@@ -8,6 +8,7 @@
 	<a href="/mock_4">製品規格</a><br />
 
 	<a href="/logout2">ログアウト2</a><br />
+    <a href="/user/register">ユーザー新規登録</a><br />
 @else
 	guest さん <br />
 	<a href="/auth/login">ログイン</a> <br />
